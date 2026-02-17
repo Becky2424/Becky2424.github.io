@@ -129,6 +129,14 @@ body {
     width: 100%;
 }
 
+.nav-links a.active {
+    color: var(--accent);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -707,6 +715,13 @@ body {
 
 .blog-card:hover .blog-read-more {
     letter-spacing: 0.5px;
+}
+
+/* ===== Section Page Layout ===== */
+.page-content {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    min-height: 100vh;
 }
 
 /* ===== Blog Post Page ===== */

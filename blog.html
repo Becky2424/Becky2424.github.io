@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Becky Garrett</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="profile.jpg" alt="Becky Garrett" class="nav-photo">
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2 class="section-title">Blog</h2>
+                <p class="blog-intro">Thoughts on leadership, operations, and my journey into AI and technology.</p>
+                <div class="blog-grid">
+                    <a href="blog/leadership-lessons.html" class="blog-card">
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Leadership</span>
+                            <h3 class="blog-card-title">What Managing 13 Locations Taught Me About Leadership</h3>
+                            <p class="blog-card-excerpt">Lessons learned from two decades of leading teams, launching facilities, and building a culture of accountability across a growing district.</p>
+                            <div class="blog-card-meta">
+                                <time datetime="2026-02-15">February 15, 2026</time>
+                                <span class="blog-read-more">Read More &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="blog/ai-learning-journey.html" class="blog-card">
+                        <div class="blog-card-body">
+                            <span class="blog-tag">AI &amp; Tech</span>
+                            <h3 class="blog-card-title">My Journey into AI: Why I Decided to Learn</h3>
+                            <p class="blog-card-excerpt">After 20 years in operations management, I decided to dive into AI and technology. Here is why, and what I have discovered so far.</p>
+                            <div class="blog-card-meta">
+                                <time datetime="2026-02-10">February 10, 2026</time>
+                                <span class="blog-read-more">Read More &rarr;</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Becky Garrett. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

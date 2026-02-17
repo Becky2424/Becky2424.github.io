@@ -8,18 +8,22 @@ window.addEventListener('scroll', () => {
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.getElementById('nav-links');
 
-navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    navToggle.classList.toggle('active');
-});
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        navToggle.classList.toggle('active');
+    });
+}
 
 // Close mobile nav when clicking a link
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        navToggle.classList.remove('active');
+if (navLinks) {
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            if (navToggle) navToggle.classList.remove('active');
+        });
     });
-});
+}
 
 // Scroll-triggered fade-in animations
 const observerOptions = {
@@ -53,23 +57,22 @@ groups.forEach(selector => {
     });
 });
 
-// Smooth active link highlighting
-const sections = document.querySelectorAll('section[id]');
-const navItems = document.querySelectorAll('.nav-links a');
-
-window.addEventListener('scroll', () => {
-    let current = '';
-    sections.forEach(section => {
-        const top = section.offsetTop - 100;
-        if (window.scrollY >= top) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navItems.forEach(item => {
-        item.style.color = '';
-        if (item.getAttribute('href') === `#${current}`) {
-            item.style.color = 'var(--accent)';
-        }
-    });
+// Page-based active link highlighting
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(link => {
+    const linkHref = link.getAttribute('href');
+    const linkPage = linkHref.replace('../', '').split('#')[0];
+    if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+        link.classList.add('active');
+    }
 });
+
+// For blog post pages, highlight the Blog nav link
+if (window.location.pathname.includes('/blog/')) {
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href.includes('blog.html')) {
+            link.classList.add('active');
+        }
+    });
+}
