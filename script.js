@@ -57,6 +57,14 @@ groups.forEach(selector => {
     });
 });
 
+// Fallback: ensure all fade-in elements become visible after 1.5s
+// Prevents elements from staying invisible if observer doesn't trigger
+setTimeout(() => {
+    document.querySelectorAll('.fade-in').forEach(el => {
+        el.classList.add('visible');
+    });
+}, 1500);
+
 // Page-based active link highlighting
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 document.querySelectorAll('.nav-links a').forEach(link => {
