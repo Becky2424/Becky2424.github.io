@@ -41,6 +41,7 @@ const groups = [
     '.timeline-item',
     '.skill-category',
     '.education-card',
+    '.blog-card',
     '.contact-links'
 ];
 
