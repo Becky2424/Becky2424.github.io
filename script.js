@@ -46,7 +46,10 @@ const groups = [
     '.skill-category',
     '.education-card',
     '.blog-card',
-    '.contact-card'
+    '.contact-card',
+    '.service-card',
+    '.roi-stat',
+    '.services-cta'
 ];
 
 groups.forEach(selector => {

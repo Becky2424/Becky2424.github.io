@@ -842,6 +842,145 @@ body {
     border-top: 1px solid var(--border);
 }
 
+/* ===== Services (About Page - AI Quick Wins) ===== */
+.services {
+    padding: 100px 0;
+}
+
+.services-intro {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-top: -32px;
+    margin-bottom: 48px;
+    max-width: 600px;
+}
+
+.services-intro strong {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.service-card {
+    background: var(--bg-alt);
+    padding: 32px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+}
+
+.service-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.service-card-full {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 12px);
+}
+
+.service-number {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.service-card h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.service-card p:last-child {
+    margin-bottom: 0;
+}
+
+.service-result {
+    font-weight: 600;
+    color: var(--accent) !important;
+    font-size: 0.9rem !important;
+}
+
+.roi-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.roi-stat {
+    text-align: center;
+    padding: 28px 20px;
+    background: var(--bg-alt);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.roi-stat .stat-number {
+    font-size: 2rem;
+}
+
+.roi-stat .stat-label {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.services-cta {
+    text-align: center;
+    padding: 48px 32px;
+    background: linear-gradient(160deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: var(--radius);
+    color: white;
+}
+
+.services-cta h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.services-cta p {
+    font-size: 1.05rem;
+    opacity: 0.85;
+    margin-bottom: 28px;
+}
+
+.services-cta .btn-primary {
+    background: var(--accent);
+    color: white;
+    font-size: 1rem;
+    padding: 16px 40px;
+}
+
+.services-cta .btn-primary:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(224, 122, 95, 0.4);
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 32px 0;
@@ -936,6 +1075,22 @@ body {
 
     .section-title {
         font-size: 1.75rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-full {
+        max-width: 100%;
+    }
+
+    .roi-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .services-cta h3 {
+        font-size: 1.25rem;
     }
 }
 
