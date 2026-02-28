@@ -213,6 +213,7 @@ body {
 
 .hero-location {
     font-size: 0.95rem;
+    font-weight: 700;
     color: var(--text-muted);
     margin-bottom: 40px;
 }
@@ -246,6 +247,15 @@ body {
     background: var(--accent-hover);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(224, 122, 95, 0.35);
+}
+
+.hero .btn-primary {
+    background: #1b2838;
+}
+
+.hero .btn-primary:hover {
+    background: #243447;
+    box-shadow: 0 6px 20px rgba(27, 40, 56, 0.35);
 }
 
 .btn-outline {
