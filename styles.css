@@ -260,6 +260,19 @@ body {
     transform: translateY(-2px);
 }
 
+.hero .btn-outline {
+    background: #6b8db5;
+    color: white;
+    border: 2px solid #6b8db5;
+}
+
+.hero .btn-outline:hover {
+    background: #5a7ca4;
+    border-color: #5a7ca4;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(107, 141, 181, 0.35);
+}
+
 .hero-scroll {
     position: absolute;
     bottom: 40px;
