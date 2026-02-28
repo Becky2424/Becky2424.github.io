@@ -66,13 +66,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 76px;
+    height: 150px;
 }
 
 .nav-logo {
     text-decoration: none;
-    width: 70px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
