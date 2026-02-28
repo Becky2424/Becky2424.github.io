@@ -239,22 +239,13 @@ body {
 }
 
 .btn-primary {
-    background: var(--accent);
+    background: #1b2838;
     color: white;
 }
 
 .btn-primary:hover {
-    background: var(--accent-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(224, 122, 95, 0.35);
-}
-
-.hero .btn-primary {
-    background: #1b2838;
-}
-
-.hero .btn-primary:hover {
     background: #243447;
+    transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(27, 40, 56, 0.35);
 }
 
@@ -987,16 +978,16 @@ body {
 }
 
 .services-cta .btn-primary {
-    background: var(--accent);
+    background: #1b2838;
     color: white;
     font-size: 1rem;
     padding: 16px 40px;
 }
 
 .services-cta .btn-primary:hover {
-    background: var(--accent-hover);
+    background: #243447;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(224, 122, 95, 0.4);
+    box-shadow: 0 6px 20px rgba(27, 40, 56, 0.35);
 }
 
 /* ===== Footer ===== */
