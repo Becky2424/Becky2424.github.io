@@ -87,3 +87,57 @@ if (window.location.pathname.includes('/blog/')) {
         }
     });
 }
+
+// ===== Share Button GA4 Event Tracking =====
+document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+        let platform = 'unknown';
+        if (this.classList.contains('share-facebook')) platform = 'facebook';
+        else if (this.classList.contains('share-twitter')) platform = 'x_twitter';
+        else if (this.classList.contains('share-linkedin')) platform = 'linkedin';
+        else if (this.classList.contains('share-copy')) platform = 'copy_link';
+
+        const postTitle = document.querySelector('.blog-post-title')?.textContent || document.title;
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'share_click', {
+                event_category: 'Social Share',
+                event_label: postTitle,
+                share_platform: platform,
+                page_path: window.location.pathname
+            });
+        }
+    });
+});
+
+// ===== EmailJS Share Notification =====
+(function () {
+    if (typeof emailjs === 'undefined') return;
+
+    emailjs.init('VeLrd7KzKHeHH-WUa');
+
+    document.querySelectorAll('.share-btn').forEach(btn => {
+        btn.addEventListener('click', function () {
+            let platform = 'Unknown';
+            if (this.classList.contains('share-facebook')) platform = 'Facebook';
+            else if (this.classList.contains('share-twitter')) platform = 'X (Twitter)';
+            else if (this.classList.contains('share-linkedin')) platform = 'LinkedIn';
+            else if (this.classList.contains('share-copy')) platform = 'Copy Link';
+
+            const postTitle = document.querySelector('.blog-post-title')?.textContent || 'Unknown Post';
+
+            emailjs.send('service_pcbhiwq', 'template_lpuhrif', {
+                blog_post: postTitle,
+                share_platform: platform,
+                timestamp: new Date().toLocaleString('en-US', {
+                    timeZone: 'America/New_York',
+                    dateStyle: 'medium',
+                    timeStyle: 'short'
+                }),
+                page_url: window.location.href
+            }).catch(function (err) {
+                console.warn('EmailJS notification failed:', err);
+            });
+        });
+    });
+})();
