@@ -1252,6 +1252,41 @@ body {
     font-weight: 500;
 }
 
+/* Portfolio — Featured Card & Gallery */
+.portfolio-card-featured {
+    grid-column: 1 / -1;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
+    gap: 6px;
+    padding: 6px;
+    background: var(--bg);
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item-tall {
+    grid-row: span 2;
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 32px 0;
@@ -1369,6 +1404,11 @@ body {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 150px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1390,5 +1430,14 @@ body {
     .contact-links {
         flex-direction: column;
         align-items: center;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 120px;
+    }
+
+    .gallery-item-tall {
+        grid-row: span 1;
     }
 }
