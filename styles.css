@@ -1252,41 +1252,66 @@ body {
     font-weight: 500;
 }
 
-/* Portfolio — Featured Card & Gallery */
-.portfolio-card-featured {
-    grid-column: 1 / -1;
+/* Portfolio — Showcase Gallery (standalone, not in a card) */
+.portfolio-showcase {
+    margin-top: 48px;
+    text-align: center;
 }
 
-.portfolio-gallery {
+.showcase-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.showcase-desc {
+    font-size: 0.92rem;
+    color: var(--text-light);
+    margin-bottom: 12px;
+}
+
+.showcase-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    padding: 20px;
+    gap: 8px;
     justify-content: center;
-    align-items: flex-start;
+    margin-bottom: 24px;
 }
 
-.gallery-item {
-    width: 140px;
+.showcase-tags span {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    background: rgba(107, 141, 181, 0.1);
+    color: var(--accent);
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+.showcase-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.showcase-gallery img {
+    width: 130px;
+    height: auto;
     border-radius: 6px;
-    overflow: visible;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-item:hover {
-    transform: scale(2.2);
+.showcase-gallery img:hover {
+    transform: scale(2.5);
     z-index: 10;
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 6px;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
 }
 
 /* ===== Footer ===== */
@@ -1407,12 +1432,12 @@ body {
         grid-template-columns: 1fr;
     }
 
-    .gallery-item {
-        width: 120px;
+    .showcase-gallery img {
+        width: 110px;
     }
 
-    .gallery-item:hover {
-        transform: scale(2);
+    .showcase-gallery img:hover {
+        transform: scale(2.2);
     }
 }
 
@@ -1437,11 +1462,11 @@ body {
         align-items: center;
     }
 
-    .gallery-item {
-        width: 100px;
+    .showcase-gallery img {
+        width: 90px;
     }
 
-    .gallery-item:hover {
-        transform: scale(2.5);
+    .showcase-gallery img:hover {
+        transform: scale(3);
     }
 }
