@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Garrett's Marketing & Graphic Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+  <style>
+    .blog-card-image.c1{background:linear-gradient(135deg,#0d2545,#2255a4)}
+    .blog-card-image.c2{background:linear-gradient(135deg,#1a4d6e,#2a8ca8)}
+    .blog-card-image.c3{background:linear-gradient(135deg,#5c3d11,#c8a96e)}
+    .blog-card-image.c4{background:linear-gradient(135deg,#0d2545,#1a3d7c)}
+    .blog-card-image.c5{background:linear-gradient(135deg,#2d3748,#4a5568)}
+    .blog-card-image.c6{background:linear-gradient(135deg,#1a1a2e,#16213e)}
+    .blog-hero{background:var(--off-white);border:1px solid var(--light-gray);border-radius:12px;overflow:hidden;margin-bottom:56px;display:grid;grid-template-columns:1fr 1fr}
+    .blog-hero-img{min-height:360px;display:flex;align-items:center;justify-content:center;font-size:5rem;background:linear-gradient(135deg,var(--navy),var(--blue))}
+    .blog-hero-body{padding:52px 48px;display:flex;flex-direction:column;justify-content:center}
+    .blog-hero-body h2{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--navy);line-height:1.25;margin-bottom:16px}
+    .blog-hero-body p{font-size:0.92rem;color:var(--text-light);line-height:1.8;margin-bottom:28px}
+    @media(max-width:700px){.blog-hero{grid-template-columns:1fr}.blog-hero-img{min-height:200px}.blog-hero-body{padding:32px 28px}}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.jpeg" alt="Garrett's Logo">
+        <div class="nav-logo-text">
+          <span class="brand-name">Garrett's</span>
+          <span class="brand-tagline">Marketing &amp; Graphic Design</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="information.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Insights &amp; Ideas</h1>
+    <p>Marketing &middot; Design &middot; AI &middot; Small Business Strategy</p>
+  </div>
+
+  <section class="blog-section">
+    <div class="blog-inner">
+
+      <div class="section-label">Featured Article</div>
+      <div class="blog-hero">
+        <div class="blog-hero-img">&#129302;</div>
+        <div class="blog-hero-body">
+          <div class="blog-category">AI &amp; Technology</div>
+          <h2>How AI is Changing the Game for Small Business Owners in 2026</h2>
+          <p>Artificial intelligence is no longer a tool only for large corporations. From automating customer follow-ups to generating marketing copy in seconds, small business owners who embrace AI are gaining a serious competitive edge.</p>
+          <a href="#" class="btn-primary" style="width:fit-content;background:var(--navy);color:var(--white)">Read Article &#8250;</a>
+        </div>
+      </div>
+
+      <div class="section-label">Recent Posts</div>
+      <div class="blog-grid">
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c1">&#127912;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">Graphic Design</div>
+            <h3>5 Signs Your Business Logo Needs a Refresh</h3>
+            <p>Your logo is the face of your brand. If customers aren't connecting with it, your business may be losing opportunities without you realizing it.</p>
+          </div>
+          <div class="blog-card-footer"><span>March 2026</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c2">&#128227;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">Marketing Strategy</div>
+            <h3>Community Marketing: The Most Underrated Strategy for Local Businesses</h3>
+            <p>In a world obsessed with digital ads, getting out into your community can deliver returns that no algorithm can match.</p>
+          </div>
+          <div class="blog-card-footer"><span>February 2026</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c3">&#128188;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">Operations</div>
+            <h3>Building a Team That Runs Itself: Lessons from 20 Years of Operations</h3>
+            <p>The best-managed businesses don't depend on the owner being present for every decision. Here are the systems that make that possible.</p>
+          </div>
+          <div class="blog-card-footer"><span>January 2026</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c4">&#127760;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">Web Design</div>
+            <h3>What Your Small Business Website Must Have in 2026</h3>
+            <p>A slow, outdated, or hard-to-navigate website is costing you customers every day. These are the non-negotiables for a site that works.</p>
+          </div>
+          <div class="blog-card-footer"><span>December 2025</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c5">&#129302;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">AI &amp; Technology</div>
+            <h3>The AI Readiness Audit: Is Your Business Ready for Artificial Intelligence?</h3>
+            <p>Before investing in any AI tool, smart business owners ask these questions first. Walk through a simple readiness framework.</p>
+          </div>
+          <div class="blog-card-footer"><span>November 2025</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+        <a href="#" class="blog-card">
+          <div class="blog-card-image c6">&#10024;</div>
+          <div class="blog-card-body">
+            <div class="blog-category">Branding</div>
+            <h3>Why Consistent Branding Is the Highest ROI Investment You Can Make</h3>
+            <p>Consistency builds trust, and trust builds customers. See how a unified visual identity creates compound returns over time.</p>
+          </div>
+          <div class="blog-card-footer"><span>October 2025</span><span class="blog-read-more">Read More &#8594;</span></div>
+        </a>
+
+      </div>
+
+      <div class="contact-cta" style="margin-top:80px">
+        <h3>Stay in the Loop</h3>
+        <p>Get practical marketing tips, design insights, and AI tools that actually work for small businesses &mdash; delivered straight to your inbox.</p>
+        <a href="mailto:becky2424@gmail.com?subject=Newsletter Signup" class="btn-primary" style="margin-top:8px">Subscribe via Email &#8250;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="brand-name">Garrett's</div><div class="brand-tag">Marketing &amp; Graphic Design</div><p>Professional marketing, design, and AI consulting for small businesses. Serving Wilmington, NC and beyond.</p></div>
+        <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Home</a></li><li><a href="experience.html">Experience</a></li><li><a href="information.html">Information</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+        <div class="footer-col"><h5>Contact</h5><ul><li><a href="mailto:becky2424@gmail.com">becky2424@gmail.com</a></li><li><a href="tel:8042432424">(804) 243-2424</a></li><li><a href="#">Wilmington, NC 28401</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Garrett's Marketing &amp; Graphic Design. All rights reserved.</span><span>Wilmington, NC</span></div>
+    </div>
+  </footer>
+</body>
+</html>
