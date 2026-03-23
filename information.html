@@ -89,7 +89,17 @@
           <div class="contact-item"><span class="c-icon">&#128222;</span><a href="tel:8042432424" style="color:rgba(255,255,255,0.85);text-decoration:none">(804) 243-2424</a></div>
           <div class="contact-item"><span class="c-icon">&#128205;</span><span>Wilmington, NC 28401</span></div>
         </div>
-        <a href="mailto:becky2424@gmail.com" class="btn-primary">Send a Message &#8250;</a>
+        <form action="https://formsubmit.co/becky2424@gmail.com" method="POST" style="display:flex;flex-direction:column;gap:12px;max-width:560px;margin:0 auto;width:100%">
+          <input type="hidden" name="_subject" value="New message from Garrett's Marketing website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://becky2424.github.io/information.html?sent=true">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <input type="text" name="name" placeholder="Your Name" required style="padding:14px 18px;border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.1);color:#fff;border-radius:4px;font-family:'Jost',sans-serif;font-size:0.88rem;outline:none;width:100%">
+            <input type="email" name="email" placeholder="Your Email" required style="padding:14px 18px;border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.1);color:#fff;border-radius:4px;font-family:'Jost',sans-serif;font-size:0.88rem;outline:none;width:100%">
+          </div>
+          <textarea name="message" placeholder="Your Message" rows="4" required style="padding:14px 18px;border:1px solid rgba(255,255,255,0.25);background:rgba(255,255,255,0.1);color:#fff;border-radius:4px;font-family:'Jost',sans-serif;font-size:0.88rem;outline:none;resize:vertical;width:100%"></textarea>
+          <button type="submit" class="btn-primary" style="border:none;cursor:pointer;align-self:center;margin-top:4px">Send a Message &#8250;</button>
+        </form>
       </div>
     </div>
   </section>
