@@ -7,7 +7,7 @@
 
 :root {
     --primary: #1b2838;
-    --primary-light: #243447;
+    --primary-light: #243447
     --accent: #6b8db5;
     --accent-hover: #5a7ca4;
     --bg: #faf9f6;
@@ -71,8 +71,8 @@ body {
 
 .nav-logo {
     text-decoration: none;
-    width: 140px;
-    height: 140px;
+    width: 280;
+    height: 280;
     display: flex;
     align-items: center;
     justify-content: center;
