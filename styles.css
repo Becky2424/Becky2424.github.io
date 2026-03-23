@@ -132,3 +132,19 @@ footer{background:var(--navy);padding:60px 40px 32px;color:rgba(255,255,255,0.6)
 .footer-bottom{display:flex;align-items:center;justify-content:space-between;font-size:0.78rem}
 @media(max-width:900px){.hero-inner,.about-inner,.info-grid{grid-template-columns:1fr;gap:48px}.hero{padding-top:100px;padding-bottom:60px;text-align:center}.hero-eyebrow{justify-content:center}.hero-desc{margin:0 auto 36px}.hero-actions{justify-content:center}.services-grid{grid-template-columns:1fr 1fr}.skills-grid{grid-template-columns:repeat(2,1fr)}.education-cards{grid-template-columns:1fr 1fr}.blog-grid{grid-template-columns:1fr 1fr}.footer-top{grid-template-columns:1fr;gap:36px}.timeline::before{left:0}.timeline-item{grid-template-columns:1fr;padding-left:24px}.timeline-left{text-align:left;padding-right:0}.timeline-dot{left:0}.timeline-right{padding-left:0}}
 @media(max-width:600px){.nav-links{display:none}.services-grid,.blog-grid,.education-cards{grid-template-columns:1fr}.skills-grid{grid-template-columns:1fr 1fr}.page-header{padding:120px 24px 60px}}
+
+
+/* ── FOOTER LAYOUT FIX ── */
+footer{background:var(--navy);padding:60px 40px 32px;color:rgba(255,255,255,0.6)}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:32px}
+.footer-right-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.footer-brand .brand-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--white);margin-bottom:4px}
+.footer-brand .brand-tag{font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;display:block}
+.footer-brand p{font-size:0.85rem;line-height:1.8;max-width:340px}
+.footer-col h5{font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-col ul li a{font-size:0.85rem;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s}
+.footer-col ul li a:hover{color:var(--white)}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;font-size:0.78rem}
+@media(max-width:700px){.footer-top{grid-template-columns:1fr}.footer-right-cols{grid-template-columns:1fr 1fr}}
