@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Garrett's Marketing & Graphic Design</title>
+  <meta name="description" content="Portfolio showcasing graphic design work by Becky Garrett — business cards, brochures, branded materials, and more for small businesses and churches.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.jpeg" alt="Garrett's Marketing & Graphic Design Logo">
+        <div class="nav-logo-text">
+          <span class="brand-name">Garrett's</span>
+          <span class="brand-tagline">Marketing &amp; Graphic Design</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="information.html#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Portfolio</h1>
+    <p>A selection of recent design work for small businesses &amp; churches</p>
+  </div>
+
+  <!-- PENTECOSTALS OF WILMINGTON -->
+  <section class="portfolio-section">
+    <div class="portfolio-inner">
+      <div class="portfolio-client">
+        <div class="section-label">Church Branding</div>
+        <h2 class="section-title">The Pentecostals of Wilmington</h2>
+        <p class="section-desc">Complete branding package including tri-fold brochures, business cards, and branded merchandise for a growing church community in Wilmington, NC.</p>
+      </div>
+      <div class="portfolio-gallery">
+        <div class="gallery-item gallery-wide">
+          <img src="portfolio/pow-trifold-outside.png" alt="Pentecostals of Wilmington — Tri-fold Brochure Outside">
+          <div class="gallery-caption">Tri-fold Brochure &mdash; Outside</div>
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img src="portfolio/pow-trifold-inside.png" alt="Pentecostals of Wilmington — Tri-fold Brochure Inside">
+          <div class="gallery-caption">Tri-fold Brochure &mdash; Inside</div>
+        </div>
+        <div class="gallery-item">
+          <img src="portfolio/pow-card-front.jpeg" alt="Pentecostals of Wilmington — Business Card Front">
+          <div class="gallery-caption">Business Card &mdash; Front</div>
+        </div>
+        <div class="gallery-item">
+          <img src="portfolio/pow-card-back.jpeg" alt="Pentecostals of Wilmington — Business Card Back">
+          <div class="gallery-caption">Business Card &mdash; Back</div>
+        </div>
+        <div class="gallery-item gallery-center">
+          <img src="portfolio/pow-branded-pen.png" alt="Pentecostals of Wilmington — Branded Pen">
+          <div class="gallery-caption">Branded Pen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORT CITY SENIOR INSURANCE -->
+  <section class="portfolio-section portfolio-alt">
+    <div class="portfolio-inner">
+      <div class="portfolio-client">
+        <div class="section-label">Business Cards</div>
+        <h2 class="section-title">Port City Senior Insurance</h2>
+        <p class="section-desc">Professional business card design for an independent insurance agent, featuring a clean layout with photo, contact details, and company branding.</p>
+      </div>
+      <div class="portfolio-gallery">
+        <div class="gallery-item gallery-center">
+          <img src="portfolio/portcity-card.jpg" alt="Port City Senior Insurance — Business Card">
+          <div class="gallery-caption">Business Card Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-name">Garrett's</div>
+          <div class="brand-tag">Marketing &amp; Graphic Design</div>
+          <p>Professional marketing and design services for small businesses. Serving Wilmington, NC and beyond.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li>Becky Lee Garrett</li>
+            <li><a href="mailto:becky2424@gmail.com">becky2424@gmail.com</a></li>
+            <li><a href="tel:8042432424">(804) 243-2424</a></li>
+            <li>Wilmington, NC 28401</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Garrett's Marketing &amp; Graphic Design. All rights reserved.</span>
+        <span>Wilmington, NC</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', function() {
+        toggle.classList.toggle('active');
+        links.classList.toggle('open');
+      });
+      links.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          toggle.classList.remove('active');
+          links.classList.remove('open');
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
